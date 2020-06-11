@@ -1,5 +1,5 @@
 {
-  "name": "@nhibberd/pagerduty-custom-test",
+  "name": "pagerduty-custom-test",
   "version": "1.0.0",
   "description": "Unit test for PagerDuty custom event transformation",
   "main": "index.js",
