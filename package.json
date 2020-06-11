@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/nhibberd/pagerduty-custom-test/issues"
   },
-  "homepage": "https://github.com/nhibberd/pagerduty-custom-test#readme",
+  "homepage": "https://github.com/nhibberd/pagerduty-custom-test",
   "dependencies": {
     "fs": "0.0.1-security",
     "jest": "^26.0.1",
