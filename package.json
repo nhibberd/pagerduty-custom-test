@@ -1,5 +1,5 @@
 {
-  "name": "pagerduty-custom-test",
+  "name": "@nhibberd/pagerduty-custom-test",
   "version": "1.0.0",
   "description": "Unit test for PagerDuty custom event transformation",
   "main": "index.js",
@@ -26,5 +26,9 @@
   "homepage": "https://github.com/nhibberd/pagerduty-custom-test#readme",
   "devDependencies": {
     "vm": "^0.1.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jest": "^26.0.1"
   }
 }
