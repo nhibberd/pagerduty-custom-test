@@ -13,11 +13,9 @@ var pdtest = require("pagerduty-custom-test");
 
 test('ok', () => {
   var emit = jest.fn()
-  var fail = jest.fn()
 
-  pdtest.runTestWithFail("transform.js", `{}`, emit, fail)
+  pdtest.runTest("transform.js", `{}`, emit)
 
   expect(emit).toHaveBeenCalledTimes(1);
-  expect(fail).toHaveBeenCalledTimes(0);
 });
 ```
