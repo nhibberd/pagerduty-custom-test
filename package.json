@@ -1,0 +1,30 @@
+{
+  "name": "pagerduty-custom-test",
+  "version": "1.0.0",
+  "description": "Unit test for PagerDuty custom event transformation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhibberd/pagerduty-custom-test.git"
+  },
+  "keywords": [
+    "pagerduty",
+    "custom",
+    "event",
+    "transform",
+    "test",
+    "testing"
+  ],
+  "author": "Nick Hibberd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhibberd/pagerduty-custom-test/issues"
+  },
+  "homepage": "https://github.com/nhibberd/pagerduty-custom-test#readme",
+  "devDependencies": {
+    "vm": "^0.1.0"
+  }
+}
