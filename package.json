@@ -24,11 +24,9 @@
     "url": "https://github.com/nhibberd/pagerduty-custom-test/issues"
   },
   "homepage": "https://github.com/nhibberd/pagerduty-custom-test#readme",
-  "devDependencies": {
-    "vm": "^0.1.0"
-  },
   "dependencies": {
     "fs": "0.0.1-security",
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "vm": "^0.1.0"
   }
 }
