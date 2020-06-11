@@ -11,20 +11,20 @@ var PD = {
 exports.runTest = function(
   transformFile,
   inputRequest,
-  fn,
+  fn
 ) {
-  runTestWithFail(transformFile, inputRequest, fn, jest.fn())
+  runTestWithFail(transformFile, inputRequest, fn, jest.fn());
 }
 
 exports.runTestWithFail = function(
   transformFile,
   inputRequest,
   fn,
-  failFn,
+  failFn
 ) {
   var data = fs.readFileSync(transformFile);
-  PD.inputRequest = inputRequest
-  PD.emitGenericEvents = fn
+  PD.inputRequest = inputRequest;
+  PD.emitGenericEvents = fn;
   var rawContext = {
     PD: PD
   }
