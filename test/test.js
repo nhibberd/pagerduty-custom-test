@@ -9,6 +9,10 @@ var PD = {
 }
 
 var runTest = function(transformFile, inputRequest, fn) {
+  runTestWithFail(transformFile, inputRequest, fn, jest.fn())
+}
+
+var runTestWithFail = function(transformFile, inputRequest, fn, failFn) {
   var data = fs.readFileSync(transformFile);
   PD.inputRequest = inputRequest
   PD.emitGenericEvents = fn
@@ -28,6 +32,8 @@ test('expect-throw', () => {
 
 test('ok', () => {
   var emit = jest.fn()
-  runTest("transform.js", `{}`, emit)
-  expect(emit).toHaveBeenCalled();
+  var fail = jest.fn()
+  runTestWithFail("transform.js", `{}`, emit, fail)
+  expect(emit).toHaveBeenCalledTimes(1);
+  expect(fail).toHaveBeenCalledTimes(0);
 });
