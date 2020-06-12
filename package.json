@@ -1,6 +1,6 @@
 {
   "name": "pagerduty-custom-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unit test for PagerDuty custom event transformation",
   "main": "index.js",
   "scripts": {
